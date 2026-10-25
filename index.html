@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nodo Software | Desarrollo de software a la medida</title>
+  <meta name="description" content="Nodo Software diseña y construye sitios web, apps y sistemas a la medida para empresas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="nav" id="inicio">
+    <a class="logo" href="#inicio"><i class="bi bi-diagram-3-fill"></i> Nodo Software</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false"><i class="bi bi-list"></i></button>
+    <nav id="menu">
+      <a href="#servicios">Servicios</a>
+      <a href="#tecnologias">Tecnologías</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#cotizador">Cotizador</a>
+      <a class="btn btn-sm" href="#contacto">Contáctanos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>
+          <span class="line"><span class="l">Software a la medida,</span></span>
+          <span class="line"><span class="l">entregado por etapas,</span></span>
+          <span class="line"><span class="l">sin sorpresas.</span></span>
+        </h1>
+        <p>Diseñamos y programamos sitios web, apps y sistemas internos para empresas. Tú ves avances cada semana y pagas por lo que se construye.</p>
+        <div class="cta">
+          <a class="btn" href="#cotizador"><i class="bi bi-calculator"></i> Calcular mi proyecto</a>
+          <a class="btn btn-ghost" href="#proyectos">Ver proyectos</a>
+        </div>
+      </div>
+      <div class="codewin" aria-hidden="true">
+        <div class="dots"><i></i><i></i><i></i></div>
+        <pre><span class="ln"><b>const</b> proyecto = {</span>
+<span class="ln">  cliente: <em>"Tu empresa"</em>,</span>
+<span class="ln">  entrega: <em>"cada semana"</em>,</span>
+<span class="ln">  soporte: <em>"incluido"</em>,</span>
+<span class="ln">  estado: <em>"en desarrollo"</em></span>
+<span class="ln">};</span></pre>
+      </div>
+    </section>
+
+    <section class="sec" id="servicios">
+      <h2>Lo que construimos</h2>
+      <div class="grid g4">
+        <article class="card svc"><i class="bi bi-window-stack"></i><h3>Sitios y landing pages</h3><p>Páginas rápidas que se ven bien en cualquier pantalla y están listas para vender.</p></article>
+        <article class="card svc"><i class="bi bi-phone"></i><h3>Aplicaciones móviles</h3><p>Apps para Android y iOS con las funciones que tus clientes realmente usan.</p></article>
+        <article class="card svc"><i class="bi bi-cloud-arrow-up"></i><h3>Sistemas en la nube</h3><p>Paneles, inventarios y APIs conectados a una base de datos segura.</p></article>
+        <article class="card svc"><i class="bi bi-shield-check"></i><h3>Mantenimiento</h3><p>Corregimos errores, actualizamos y damos soporte después de la entrega.</p></article>
+      </div>
+    </section>
+
+    <section class="sec alt" id="tecnologias">
+      <h2>Tecnologías que usamos</h2>
+      <ul class="tech">
+        <li><i class="bi bi-filetype-html"></i>HTML</li>
+        <li><i class="bi bi-filetype-css"></i>CSS</li>
+        <li><i class="bi bi-filetype-js"></i>JavaScript</li>
+        <li><i class="bi bi-filetype-py"></i>Python</li>
+        <li><i class="bi bi-database"></i>PostgreSQL</li>
+        <li><i class="bi bi-github"></i>Git y GitHub</li>
+      </ul>
+    </section>
+
+    <section class="stats" aria-label="Estadísticas">
+      <div><strong data-count="48">48</strong><span>proyectos entregados</span></div>
+      <div><strong data-count="32">32</strong><span>clientes activos</span></div>
+      <div><strong data-count="6">6</strong><span>años de experiencia</span></div>
+      <div><strong data-count="98">98</strong><span>% de clientes que nos recomiendan</span></div>
+    </section>
+
+    <section class="sec" id="proyectos">
+      <h2>Proyectos recientes</h2>
+      <div class="grid g3">
+        <article class="card proj"><div class="thumb t1"><i class="bi bi-basket3"></i></div><h3>Pedidos Express</h3><p>App de pedidos para restaurantes: menú, pagos y seguimiento en tiempo real.</p></article>
+        <article class="card proj"><div class="thumb t2"><i class="bi bi-calendar2-heart"></i></div><h3>AgendaClínica</h3><p>Sistema de citas y recordatorios para consultorios médicos.</p></article>
+        <article class="card proj"><div class="thumb t3"><i class="bi bi-truck"></i></div><h3>RutaFácil</h3><p>Panel para ver rutas, entregas y rendimiento de una flotilla.</p></article>
+      </div>
+    </section>
+
+    <section class="sec alt" id="cotizador">
+      <div class="calc">
+        <div>
+          <h2>Calcula el costo de tu sitio</h2>
+          <p>Escribe cuántas páginas necesitas y el precio por página. El costo estimado se actualiza al instante.</p>
+        </div>
+        <div class="card calc-box">
+          <label for="paginas">Cantidad de páginas</label>
+          <input type="number" id="paginas" min="1" value="5">
+          <label for="precio">Precio por página (MXN)</label>
+          <input type="number" id="precio" min="0" value="800">
+          <button class="btn" id="btnCalcular" type="button">Calcular costo</button>
+          <p class="total">Costo estimado: <strong id="resultado">$4,000</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="contacto">
+      <h2>Cuéntanos tu idea</h2>
+      <form class="card form" id="formContacto" novalidate>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" required>
+        <label for="mensaje">¿Qué necesitas?</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        <button class="btn" type="submit"><i class="bi bi-send"></i> Enviar mensaje</button>
+        <p id="formMsg" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p><i class="bi bi-diagram-3-fill"></i> Nodo Software · Empresa ficticia para fines académicos</p>
+    <p><a href="#inicio">Volver arriba</a> · <a href="#contacto">hola@nodosoftware.example</a></p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
